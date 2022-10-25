@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+  @import "partial/variable";
+  @import "partial/mixin";
+  @import "layout/nav";
+  @import "body/style";
+  @import "layout/footer";
+
+  @media (min-width: 1200px){
+   #team_area .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1229px !important;
+    }}
+  @media (min-width: 1200px){
+   #clients_items .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1210px !important;
+    }}
+    @media (max-width: 768px){
+      #banner_item .card1{
+          margin-bottom: 15px;
+      }}
+    @media (max-width: 768px){
+      #banner_body img:nth-child(1){
+        width: 343px !important;
+        height: 70% !important;
+      }}
+    @media (max-width: 768px){
+      #banner_body .img::after{
+display: none !important;
+      }}
+    @media (max-width: 768px){
+      #banner_body .card2{
+width: 341px !important;
+      }}
+    @media (max-width: 768px){
+      #body_design_items .card3 img{
+display: none !important;
+      }}
+      

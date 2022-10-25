@@ -1,0 +1,367 @@
+#banner_item{
+margin-top: 90px;
+    .pad_0{
+        padding: 0.5px !important;
+    }
+.card1{
+    cursor: pointer;
+    transition: all 0.6s ease-out 0s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include _main($width:100% ,  $height:300px , $position:relative);
+    .card_item{   
+        transition: all 0.3s ease-out 0s;
+        @include _main($width:100% ,$height:100% , $position:absolute, $top:0px, $left:0px, $color:$main_color, $text-align:center);
+ background-image:linear-gradient(184deg, #dd24ff 0%, #841ff9 100%);
+.card_item_inner{
+    transition: all 0.3s ease-out 0s;
+    @include _main($margin:50% auto);
+p{
+    @include _main($f_size:16px, $margin:15px 0); 
+}
+    }
+}
+&:hover .card_item{
+    background-image:linear-gradient(184deg, #0b0385 100%,#841ff9 100% );
+opacity: 0.8;
+}
+&:hover .card_item_inner{
+transform: translateY(-30px);
+}
+}
+}
+#banner_body{
+    margin-top: 120px;
+
+.left_side{
+    .img{       
+         @include _main($width:500px, $height:720px, $position:relative); 
+        img{ cursor: pointer;
+                   &:nth-child(1){
+                    z-index: 5;
+            @include _main($width:100%, $height:100%, $object_f:cover);
+        }
+    }
+        img{  
+                  &:nth-child(2){
+                    z-index: -5;
+            @include _main($width:54px, $height:86px, $object_f:cover, $position:absolute,$top:90px,$left:-28px);
+        }
+    }
+    &::after{
+        content: "";
+        z-index: -1;
+        @include _main($width:100%, $height:320px, $right:-100px, $bottom:20px,$position:absolute,$border-radius:20px, $back-color:#8aa29a);
+    }
+    }
+}
+.card2{
+    @include _main($width:480px);
+    span{
+        font-weight: 700;
+        @include _main($f_size:18px,$color:#4636ff,$margin:0 0 25px 0, $display:inline-block);
+    }
+    h2{
+        font-weight: 900;
+        line-height: 1.1;
+        @include _main($f_size:70px,$margin:0 0 25px 0);
+     }
+     p{ 
+        line-height: 30px;
+        @include _main($f_size:18px,$margin:0 0 40px 0,$color:#686777);
+     }
+ul{ list-style: none;
+    margin: 0;
+    padding: 0;
+    .list1{
+        display: flex;
+        align-items: center;
+        line-height: 35px;
+        li{
+            font-weight: 600;
+            @include _main($padding:0 0 0 7px, $f_size:18px, $color:#1f1841);
+        }
+        &:hover li{
+            color: #0b0385;
+        }
+    }
+}
+a{ 
+    transition: .3s ease-in-out;
+    font-weight: 600;
+    text-decoration: none;
+    @include _main($border:1px solid blue ,$border-radius:10px,$padding:14px 18px, $f_size:18px, $color:$main_color, $back-color:blue, $margin:45px 0 0 0, $display:inline-block);
+   .bi{
+    font-weight: 600;
+   }
+   &:hover{
+    @include _main($border:1px solid blue ,$color:blue,$back-color:$main_color);
+   }
+}
+}
+}
+#body_design_items{
+    .row{
+        max-width: 100%;
+    }
+.pad_no{
+    padding: 0px !important;
+}
+margin-top: 120px;
+.add_container{
+    max-width: 100%;
+    padding: 0px;
+}
+.card3{
+    overflow: hidden;
+    position: relative;
+    background: #1b133f;
+    img{
+        @include _main($position:absolute,$top:-254px, $left:0px, $object_f:contain); 
+    }
+    .up{
+        max-width: 640px !important;
+    }
+.card_inner{
+    @include _main($margin:50% auto,$color:white); 
+span{
+    font-weight: 700;
+    @include _main($f_size:18px ,$color:$main_color, $display:inline-block, $margin:0 0 25px 0); 
+}
+h2{
+    font-weight: 900;
+    line-height: 1.1;
+    font-size: 37px;
+    margin-bottom: 25px;
+}
+ul{
+    list-style:decimal !important;
+    @include _main($margin:0 0 0 17px,$padding:0); 
+line-height: 35px;
+li{transition: .3s ease-in-out;
+    @include _main($color:#777689); 
+    &:hover{
+        color: white;
+    }
+}
+}
+}
+}
+.img_right_body{
+            @include _main($height:600px, $width:100%); 
+    img{
+        @include _main($height:100%, $object_f:cover, $width:100%); 
+    }
+}
+}
+#body_service_items{
+margin-top: 150px;
+.card4{
+    margin-bottom: 100px;
+    width: 255px;
+    img{       
+            transition: transform 0.4s cubic-bezier(0.21, 0.6, 0.44, 2.18);
+        @include _main($width:40px, $height:40px, $object_f:contain, $margin:0 0 30px 0); 
+    }
+    a{
+        transition: .3s ease-in-out;
+        text-decoration: none;
+        @include _main($color:$fourth_color, $f_size:20px); 
+&:hover{
+    color: #4636ff;
+}
+    }
+    &:hover img{
+       transform: translateY(-12px);
+    }
+}
+}
+#team_area{
+margin-top: 120px;
+.text_fields{
+span{
+    font-weight: 700;
+    @include _main($color:#4636ff, $display:inline-block,$f_size:18px, $margin:0 0 25px 0); 
+}
+
+h2{
+    font-weight: 700;
+    line-height: 1.1;
+    @include _main($color:$fourth_color,$f_size:50px); 
+}
+}
+.right_place{
+    display: flex;
+    justify-content: end;
+a{ 
+    transition: .3s ease-in-out;
+    font-weight: 600;
+    text-decoration: none;
+    @include _main($border:1px solid #e2e0eb ,$border-radius:10px,$padding:14px 18px, $f_size:18px, $color:$fourth_color, $back-color:$main_color, $margin:45px 0 0 0, $display:inline-block);
+   .bi{
+    font-weight: 600;
+   }
+   &:hover{
+    @include _main($border:1px solid blue ,$color:$main_color,$back-color:blue);
+   }
+}
+}
+.card2{
+    margin-bottom: 30px;
+    cursor: pointer;
+    @include _main($position:relative,$padding:35px 0,$width:270px, $back-color:#423d7c, $border-radius:20px);
+    .img{
+        overflow: hidden;
+        @include _main($width:200px,$height:200px, $border-radius:100px , $margin:0 auto);
+        img{
+         @include _main($width:100%,$height:100%, $object_f:cover );
+        }
+    }
+    h3{
+        margin-top: 20px;
+        @include _main($color:$main_color,$f_size:22px);
+    }
+    span{
+        @include _main($color:#cac9d3,$f_size:15px); 
+    }        
+    .team_info{
+        opacity: 0;
+        transition: .3s ease-in-out;
+       @include _main($border-radius:20px,$position:absolute,$top:0px, $left:0px,$width:100%, $height:100%); 
+        content: "";
+       background-image: -moz-linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+        background-image: -webkit-linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+        background-image: -ms-linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+        background-image: linear-gradient(-130deg, #dd24ff 0%, #841ff9 100%);
+        .up_side{
+            opacity: 0;
+            transition: .3s ease-in-out;
+            @include _main($position:absolute,$top:-16px,$left:27px); 
+        }
+        .down_side{
+            opacity: 0;
+            transition: .3s ease-in-out;
+            gap: 10px;
+            @include _main($position:absolute,$bottom:5px,$left:25px, $display:flex); 
+            .icon1{
+                @include _main($color:$main_color,$display:flex,$width:40px,$height:40px,$border-radius:9px,$back-color:#7b23de); 
+align-items: center;
+justify-content: center;
+            }
+        }
+    }
+&:hover .up_side{
+    opacity: 1;
+transform: translateY(25px);
+}
+&:hover .down_side{
+    opacity: 1;
+transform: translateY(-25px);
+}
+&:hover .team_info{
+    opacity: 1;
+}
+}
+}
+#full_place{
+    margin-top: 140px;
+.full_place_bg{
+    height: 84vh;
+    width: 100%;
+    position: relative;
+  background-repeat: no-repeat;
+background-size: cover;  
+&::before{
+top: 0;
+left: 0;
+content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -moz-linear-gradient(60deg, #690ed0 0%, #170da2 100%);
+    background-image: -ms-linear-gradient(60deg, #690ed0 0%, #170da2 100%);
+    background-image: -webkit-linear-gradient(60deg, #690ed0 0%, #170da2 100%);
+    background-image: linear-gradient(60deg, #690ed0 0%, #170da2 100%);
+    opacity: 0.8;
+}
+    .item_fields{
+        position: absolute;
+        top: 170px;
+        left: 20%;
+        opacity: 1;
+        width: 60%;
+        margin: 0 auto;
+        span{
+            @include _main($f_size:20px,$color:#d4d3eb,$display:inline-block, $margin:0 0 10px 0); 
+        }
+        h2{
+            font-size: 58px;
+            color: #ffffff;
+            font-weight: 900;
+            margin-bottom: 50px;
+        }
+       .first_a{
+        margin-right: 15px;
+        transition: .3s ease-in-out;
+            text-decoration: none;
+            line-height: 48px;
+            background: #fff;
+            font-weight: 700;
+            min-width: 160px;
+            @include _main($display:inline-block,$border:2px solid #fff ,$height:54px,$color:#000,$padding:0 30px,$text-align:center,$border-radius:10px);
+            &:hover{
+                background: #1f1841;
+                color: #fff;
+                border:2px solid #1f1841; 
+            }
+    }
+      .second_a{
+        transition: .3s ease-in-out;
+            text-decoration: none;
+            line-height: 48px;
+            background: transparent;
+            font-weight: 700;
+            text-transform: capitalize;
+            min-width: 160px;
+            @include _main($display:inline-block,$height:54px,$border:2px solid #fff ,$color:#ffffff,$padding:0 30px,$text-align:center,$border-radius:10px);
+&:hover{
+    background: #fff;
+    color: #000;
+}
+    }
+    }
+}
+}
+#clients_items{
+margin-top: 130px;
+span{
+     @include _main ($f_size:18px, $color:#4636ff, $display:inline-block, $margin:0 0 25px 76px);
+    font-weight: 700;
+}
+h2{
+    font-weight: 700;
+    line-height: 1.1;
+    @include _main ($f_size:50px, $color:$fourth_color, $margin:0 0 30px 0);
+}
+p{
+        font-weight: normal;
+        line-height: 24px;
+        @include _main ($f_size:16px, $color:#686777, $margin:0 0 15px 0);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+img{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 65px;
+}
+}
+#map_field{
+    margin-top: 100px;
+    .gmap_canvas{
+        width: 100;
+    }
+}
